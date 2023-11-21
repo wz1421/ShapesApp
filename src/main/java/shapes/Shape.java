@@ -2,9 +2,6 @@ package shapes;
 
 import java.awt.*;
 
-import java.util.ArrayList; // import the ArrayList class
-
-
 
 public abstract class Shape implements Drawable{
     protected Point point;

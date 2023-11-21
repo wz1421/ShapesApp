@@ -1,7 +1,5 @@
 package shapes;
 
-import shapes.Shape;
-
 import java.awt.*;
 
 public class Circle extends Shape {
