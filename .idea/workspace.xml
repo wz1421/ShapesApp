@@ -3,30 +3,16 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="1d531dd3-de01-4ab9-a18a-8f780d4d849e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ShapeSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drawingUI/ColourSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drawingUI/ShapeSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShapeSelector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drawingUI/DrawingUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingUI/DrawingUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shapes/Drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shapes/Drawing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shapes/ShapeDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shapes/ShapeDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,22 +49,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2YA2ydf1wHYx9QnhOLbRquoeSqA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jingwenzhang/ShapesApp/src/main/java/shapes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jingwenzhang/ShapesApp/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/shapes" />
@@ -88,17 +85,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShapesApp [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -115,7 +101,10 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -134,48 +123,21 @@
       <updated>1699954322915</updated>
       <workItem from="1699954325347" duration="6959000" />
       <workItem from="1700559923576" duration="5144000" />
-      <workItem from="1700577800619" duration="1801000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="708" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1700578509233">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="708" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1700578509233" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1700579381886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1700579381886" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1700579381886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1700579381886" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1700579381886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1700579381886" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1700579381886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1700579381886" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1700578596008">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1700578596008" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

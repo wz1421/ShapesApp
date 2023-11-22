@@ -6,21 +6,21 @@ import java.awt.*;
 public class ShapeDB {
     ArrayList<Shape> shapes = new ArrayList<>();
 
-    private void addSquare(Point pos, Color col, int side) {//not returning anything so it is just void
+    public void addSquare(Point pos, int side, Color col) {//not returning anything so it is just void
         Square square = new Square(pos, side, col); //this is the order of inputs from my Square class
         shapes.add(square);
     }
 
-    protected void addCircle(Point pos, Color col, int radius) {
+    public void addCircle(Point pos, Color col, int radius) {
         Circle circle = new Circle(radius, pos, col);
         shapes.add(circle);
     }
 
-    private void addRect(Point pos, Color col, int w, int h) {
+    public void addRect(Point pos, Color col, int w, int h) {
         Rect rectangle = new Rect(pos, w, h, col);
         shapes.add(rectangle);
     }
-    protected void drawShapes(Graphics g){
+    public void drawShapes(Graphics g){
         for (Shape shape : shapes) {
             shape.draw(g);
         }

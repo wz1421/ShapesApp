@@ -16,48 +16,27 @@ public class Drawing extends Canvas {
 
     Point p = new Point();
 
-    ShapeDB shapedb= new ShapeDB();
+    public ShapeDB shapedb= new ShapeDB();
 
     public Drawing() {
+        setBackground(Color.white);
         setPreferredSize(new Dimension(800, 600)); // Set preferred size for the canvas
-        addMouseListener(new MouseListener() {
-
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                p = e.getPoint();
-                shapedb.addCircle(p,Color.RED,50);
-                repaint();
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-
-            }
-
-        });
-
     }
 
-    //public void clear() {
-        //shapedb.clear();
-        //repaint();
-
     //}
+    public void addSquare(Point pos, Color col, int side) {//not returning anything so it is just void
+        Square square = new Square(pos, side, col); //this is the order of inputs from my Square class
+        shapedb.addSquare(pos,side,col);
+    }
+    public void addCircle(Point pos, Color col, int radius) {
+        Circle circle = new Circle(radius, pos, col);
+        shapedb.addCircle(pos,col,radius);
+    }
+
+    public void addRect(Point pos, Color col, int w, int h) {
+        Rect rectangle = new Rect(pos, w, h, col);
+        shapedb.addRect(pos,col,w,h);
+    }
     public void paint(Graphics g){
         shapedb.drawShapes(g);
     }
